@@ -4,7 +4,7 @@
     --azul: rgb(17, 62, 114);
     --celeste: rgb(82, 173, 173);
     --grey: rgb(109, 109, 109);
-    --rojo: rgb(65, 0, 0);
+    --rojo: rgb(235, 111, 111);
     --verde: #a7db8f;
 }
 *{
@@ -37,8 +37,9 @@ ul{
 }
 
 a{
-    color: var(--black);
+    color: var(--rojo);
     text-decoration: none;
+    font-weight: 800;
 }
 
 /* section-global ----*/

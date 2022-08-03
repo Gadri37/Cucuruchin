@@ -133,27 +133,27 @@ section.hero > div{
     border-radius: 10px;
 }
 
-section.hero .hero-item{
+.hero div:first-child{
     grid-area: nav;
     background-color: var(--rojo);
 }
-section.hero .hero-item2{
+.hero div:nth-child(2){
     grid-area: header;
     background-color: var(--rojo);
 }
-section.hero .hero-item3{
+.hero div:nth-child(3){
     grid-area: productos;
     background-color: var(--rojo);
 }
-section.hero .hero-item4{
+.hero div:nth-child(4){
     grid-area: servicios;
     background-color: var(--rojo);
 }
-section.hero .hero-item5{
+.hero div:nth-child(5){
     grid-area: aside;
     background-color: var(--rojo);
 }
-section.hero .hero-item6{
+.hero div:nth-child(6){
     grid-area: footer;
     background-color: var(--rojo);
 }

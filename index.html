@@ -4,50 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cucuruchín Heladería</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
+ <!-- -------------------------------------------    -->
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <div class="logo-jpg"> 
-                <h2>D</h2>
+    <div class="header-container">
+        <header class="header">
+            <div class="logo-container">
+                <a href="index.html"><div class="logo-jpg"></div></a>
+                <a href="index.html"><h2 class="logo-text">Cucuruchín Heladería</h2></a>
             </div>
-        </div>
-            <nav class="nav-bar">
-                <input type="checkbox" id="toggle-menu">
-                <label class="btn-burger" for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
-                
-                <ul class="nav-bar-list">
-                    <a href="#inicio"><li>INICIO</li></a>
-                    <a href="#"><li>lOCALES</li></a>
-                    <a href="#"><li>CONTACTO</li></a>
-                    <a href="#"><li>PEDÍ ON-LINE</li></a>
-                </ul>
-            </nav>
-    </header>
+                <nav class="nav-bar">
+                    <input type="checkbox" id="toggle-menu">
+                    <label class="btn-burger" for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+                    
+                    <ul class="nav-bar-list">
+                        <a href="#inicio"><li>INICIO</li></a>
+                        <a href="login.html"><li>INGRESAR</li></a>
+                        <a href="#contacto"><li>CONTACTO</li></a>
+                        <a href="#pedi"><li>PEDÍ ON-LINE</li></a>
+                    </ul>
+                </nav>
+        </header>
+    </div>
+ <!-- -------------------------------------------    -->
     <div class="section-container">
         <section class="hero" id="inicio">
             <div class="hero-item">
-                <h2>Nav</h2>
+                <h2 class="h2-hero">Enterate como ser miembro</h2>
+                <a href="registro.html"><div class="btn-info"><h2>Más información</h2></div></a>
             </div>
-            <div class="hero-item">
-                <h2>Header</h2>
-            </div>
-            <div class="hero-item">
-                <h2>Productos</h2>
-            </div>
-            <div class="hero-item">
-                <h2>Servicios</h2>
-            </div>
-            <div class="hero-item">
-                <h2>Aside</h2>
-            </div>
-            <div class="hero-item">
-                <h2>Footer</h2>
-            </div>
+            
         </section>
     </div>
+    <!-- ------------------------------------------- -->
+    <div class="section-container section-helados">
+        <section class="productos">
+            <div class="prod-item">
+            <h2>Cucuruchos</h2>
+            </div>
+            
+            <div class="prod-item">  
+            <h2>Rolls</h2>       
+            </div>
+            
+            <div class="prod-item">
+            <h2>Familiar</h2>
+            </div>
+           
+            <div class="prod-item">
+                <h2>Sabores</h2>
+            </div>
+        </section> 
+    </div>
+
+ <!-- -------------------------------------------    -->
+    <div class="section-container section-helados">
+        <section class="contacto-container" id="contacto">
+           <div class="contacto">
+                <h2>Mandanos un email para comunicarte con nosotros</h2>
+                <h3>Tu email:</h3>
+                <input class="contacto-item" type="email" placeholder="Dirección de correo electrónico">
+                <h3>Tu Nombre:</h3>
+                <input class="contacto-item" type="text" placeholder="Nombre">
+                <h3>Mensaje:</h3>
+                <textarea class="contacto-item" placeholder="Mensaje"></textarea>
+                <div class="btn-contacto"><h2>Enviar</h2></div></a>
+           </div>
+        </section> 
+    </div>
+
+<!-- -------------------------------------------    -->
+
+    <footer>
+        <div class="footer-containter">
+            <div class="footer-item">
+                <ul>
+                    <li><h2>Redes Sociales</h2></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Cucuruchín Heladería</a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>Cucuruchín Heladería</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-item2">
+                <ul>
+                    <li><h2>Legal</h2></li>
+                    <li><a>Politica de Privacidad</a></li>
+                    <li><a>Politica de Cookies</a></li>   
+                </ul>
+                
+            </div>
+            <div class="footer-item3">
+                <div>
+                    <ul>
+                    <li>Copyright © 2022 Cucuruchín. Todos los derechos reservados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

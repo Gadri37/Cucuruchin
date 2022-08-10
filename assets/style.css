@@ -1,71 +1,92 @@
 :root{
     --black: #000;
-    --white: #fff;
-    --azul: rgb(17, 62, 114);
-    --celeste: rgb(82, 173, 173);
-    --grey: rgb(109, 109, 109);
-    --rojo: rgb(235, 111, 111);
-    --verde: #a7db8f;
+    --white: #FFF;
+    --grey: #bebebe;
+    --rose: rgb(189 94 246);
+    --whitetrans:rgba(255, 255, 255, 0.623);
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Calibri;
+
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    width: 100%;
-    color: var(--grey);
+section[id] {
+    scroll-margin-top: 5.5rem;
 }
 
-header{
-    background-color: var(--rojo); 
+body {
+    margin-top: 5.5rem;
+    color: white;
     width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(255,122,122,1) 82%, rgba(255,147,87,1) 100%, rgba(252,176,69,1) 100%);
 }
 
 ul{
     list-style: none;
+
 }
 
 a{
-    color: var(--rojo);
+    color: var(--white);
     text-decoration: none;
     font-weight: 800;
 }
 
 /* section-global ----*/
 .section-container{
-    background-color: var(--verde);
-    width: 95%;
-    height: auto;
-    margin-left: 2.5%;
-    margin-top: 1%;
+    width: 100%;
+    min-width: auto;
+}
+.section-helados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* section-global ---- */
 
 /* header-open */
-
-
-.logo-jpg{
-    background-color: var(--black);
-    color: var(--white);
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: solid var(--black) 1px;
+.header-container{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: var(--white); 
+    width: 90%;
+    height: 5.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-jpg{
+    background-image: url(./img/LogoPng.png);
+    background-position: center;
+    background-size: cover;
+    width: 3rem;
+    height: 5rem;
+    padding: 2%;
     margin-left: 2rem;
+}
+.logo-text{
+    font-family: 'Lobster';
+    color: var(--black);
 }
 
 /* burgermenu */
@@ -74,9 +95,9 @@ a{
     cursor: pointer;
     padding: 0.4rem;
     font-size: 1.8rem;
-    border: solid var(--white) 2px;
+    border: solid var(--black) 2px;
     border-radius: 10px;
-    color: var(--white);
+    color: var(--black);
 }
 
 .nav-bar{
@@ -84,20 +105,21 @@ a{
 }
 
 .nav-bar-list{
-    background-color: var(--verde);
+    background-color: var(--black);
     width: 100%;
     height: 13rem;
     padding: 2%;
-    top: 5rem;
-    right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
     position: fixed;
+    top: 5.5rem;
+    right: 0px;
     left: 100%;
-    transition: left 0.5s
+    transition: left 0.4s;
+    z-index:10;
 }
 
 #toggle-menu{
@@ -106,7 +128,7 @@ a{
 
 #toggle-menu:checked ~ .nav-bar-list{
     left: 0%;
-    transition: left 0.5s;
+    transition: left 0.4s;
 }
 
 /* burgermenu-end */
@@ -115,15 +137,13 @@ a{
 /* hero-container-open */
 
 .hero{
-    display: grid;
-    grid-template-areas:
-    'nav header header'
-    'nav productos aside'
-    'nav servicios aside'
-    'nav footer footer'; 
-    grid-template-rows: 100px 2fr 1fr 75px;
-    grid-template-columns: 25% 40%;
-    gap: 20px;
+    display:flex;
+    height: 34rem;
+    background-image: url(./img/heroland2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 section.hero > div{
@@ -133,32 +153,304 @@ section.hero > div{
     border-radius: 10px;
 }
 
-.hero div:first-child{
-    grid-area: nav;
-    background-color: var(--rojo);
+section.hero .hero-item:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-left: 1rem;
+    gap: 5px;
 }
-.hero div:nth-child(2){
-    grid-area: header;
-    background-color: var(--rojo);
+
+.h2-hero{
+    font-size: 3rem;
 }
-.hero div:nth-child(3){
-    grid-area: productos;
-    background-color: var(--rojo);
+
+.btn-info{
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.hero div:nth-child(4){
-    grid-area: servicios;
-    background-color: var(--rojo);
+
+.btn-info:hover{
+    color: var(--black);
+    background-color: var(--rose);
+    transition: 0.4s;
 }
-.hero div:nth-child(5){
-    grid-area: aside;
-    background-color: var(--rojo);
+
+input{
+    outline: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
 }
-.hero div:nth-child(6){
-    grid-area: footer;
-    background-color: var(--rojo);
+input:focus{
+    border: var(--rose) 2px solid;
+    transition: 0.4s;
 }
+
+
 /* hero-container-end */
 
+ /* productos-open */
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    gap: 10px;
+}
+.prod-item{
+    display: flex;
+    align-items: center;
+    padding: 3%; 
+}
+.prod-item>h2{
+    font-size: 1.3rem;
+}
+.prod-item:first-child{
+    background-image: url(./img/Helado/Cucurucho.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    grid-area: 1/2/2/3;
+}
+.prod-item:nth-child(2){
+    background-image: url(./img/Helado/heladoroll.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    grid-area: 1/3/2/4; 
+}
+.prod-item:nth-child(3){
+    background-image: url(./img/Helado/kilohelado.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    grid-area: 2/2/3/4;
+}
+.prod-item:nth-child(4){
+    background-image: url(./img/Helado/Sabores.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    grid-area: 1/1/3/2;
+}
+ /* productos-end */
+
+ /* section-login */
+    .section-log {
+        display: grid;
+        grid-template-areas:
+            "login"
+            "foto";
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 15rem;
+        justify-content: center;
+    }
+
+.section-log > div.log-item:first-child{
+    grid-area:foto;
+    background-image: url(./img/heroland.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    gap: 20px;
+    }
+    
+.section-log > div.log-item:nth-child(2){
+    grid-area: login;
+    background-color: var(--whitetrans);
+    color: var(--black);
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+.btn-log{
+    background-color: var(--black);
+    color:var(--white);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    height: 2.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-log:hover{
+    background-color: var(--rose);
+    color:var(--black);
+    transition: 0.4s;
+}
+ /* section-login-end */
+/* -------------------------------------------------- */
+ /* section-contacto */
+.contacto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contacto{
+    width: 100%;
+    height: auto;
+    background-color: var(--whitetrans);
+    color: var(--black);
+    padding: 3%;
+}
+.contacto-item:nth-child(7){
+    width: 60%;
+    height: 90px;
+    resize: none;
+    outline: none;
+    border: white 2px solid;
+}
+.contacto-item:nth-child(7):focus{
+    border: var(--rose) 2px solid;
+    transition: 0.4s;
+}
+.btn-contacto{
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-contacto:hover{
+    color: var(--black);
+    background-color: var(--rose);
+    transition: 0.4s;
+}
+
+/* section-contacto-end */
+/* 
+ section-registrio-open */
+.section-registrocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whitetrans);
+    color: var(--black);
+}
+.section-reg{
+    width: 90%;
+}
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 5px;
+}
+.reg-form>input{
+    width: 80%;
+}
+.reg-form-ingresar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+}
+
+/* -------------------------------------------------- */
+  /* open-footer */
+footer{
+    /* position: absolute;
+    margin-bottom: 0;
+    width: 100%; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ .footer-containter{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    height: auto;
+    padding: 2%;
+    background-color: var(--black);
+    bottom: 0px;
+}
+
+.footer-item{
+    grid-area: 1/1/2/2;
+}
+.footer-item2{
+    grid-area: 1/2/2/3;
+}
+.footer-item3{
+    display: flex;
+    align-items: center;
+    grid-area: 2/1/2/2;
+}
+ /* footer-end */
+
+/* media */
+
+ @media (min-width: 768px) {
+
+    .section-log > div.log-item:first-child {
+        background-position-y: -135px ;
+    }
+    .reg-form>input {
+        width: 40%;
+    }
+    .btn-burger{
+        display: none;
+    }
+    
+   
+    
+    .nav-bar-list{
+        background-color: var(--white);
+        height: 5.5rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        left: 47%;
+        top: 0;
+        width: 50%;
+    }
+    .nav-bar-list>a{
+        color: var(--black);
+    }
+    .nav-bar-list>a:hover{
+        border-radius: 10px;
+        background-color: var(--rose);
+        padding: 10px;
+        transition: 0.4s;
+    }
+    .btn-contacto{
+        width: 60%;
+    }
 
 
-
+ }

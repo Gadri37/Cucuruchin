@@ -420,7 +420,7 @@ footer{
  @media (min-width: 768px) {
 
     .section-log > div.log-item:first-child {
-        background-position-y: -135px ;
+        background-position-y: -9px;
     }
     .reg-form>input {
         width: 40%;
@@ -459,4 +459,10 @@ footer{
         height: 37rem;
     }
 
+ }
+
+ @media (min-width: 1024px) {
+    .section-log > div.log-item:first-child {
+        background-position-y: -135px ;
+    }
  }

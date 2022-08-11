@@ -329,6 +329,7 @@ input:focus{
     resize: none;
     outline: none;
     border: white 2px solid;
+    border-radius: 5px;
 }
 .contacto-item:nth-child(7):focus{
     border: var(--rose) 2px solid;

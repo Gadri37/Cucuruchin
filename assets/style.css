@@ -396,7 +396,7 @@ footer{
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
-    height: auto;
+    height: 150px;
     padding: 2%;
     background-color: var(--black);
     bottom: 0px;
@@ -408,10 +408,10 @@ footer{
 .footer-item2{
     grid-area: 1/2/2/3;
 }
-.footer-item3{
+.footer-item3 {
     display: flex;
     align-items: center;
-    grid-area: 2/1/2/2;
+    grid-area: 2/1/2/3;
 }
  /* footer-end */
 

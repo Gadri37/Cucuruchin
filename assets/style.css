@@ -455,5 +455,8 @@ footer{
     .prod-item>h2 {
         font-size: 2.3rem;
     }
+    .section-reg {
+        height: 37rem;
+    }
 
  }

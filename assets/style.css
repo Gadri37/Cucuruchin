@@ -361,7 +361,6 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--whitetrans);
     color: var(--black);
 }
 .section-reg{

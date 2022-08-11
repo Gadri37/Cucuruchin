@@ -261,9 +261,10 @@ input:focus{
         grid-template-areas:
             "login"
             "foto";
-        grid-template-columns: 1fr;
-        grid-template-rows: 18rem 18rem;
-        justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50% 50%;
+            justify-content: center;
+            height: 44rem;
     }
 
 .section-log > div.log-item:first-child{

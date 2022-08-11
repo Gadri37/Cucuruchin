@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 section[id] {
@@ -22,8 +23,11 @@ section[id] {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin-top: 5.5rem;
-    color: white;
+    color: var(--white);
+    min-height: 100%;
     width: 100%;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(255,122,122,1) 82%, rgba(255,147,87,1) 100%, rgba(252,176,69,1) 100%);
@@ -258,7 +262,7 @@ input:focus{
             "login"
             "foto";
         grid-template-columns: 1fr;
-        grid-template-rows: 15rem 15rem;
+        grid-template-rows: 18rem 18rem;
         justify-content: center;
     }
 
@@ -361,6 +365,7 @@ input:focus{
 }
 .section-reg{
     width: 90%;
+    height: 33rem;
 }
 .reg-form{
     display: flex;
@@ -382,8 +387,7 @@ input:focus{
 /* -------------------------------------------------- */
   /* open-footer */
 footer{
-    position: relative;
-    bottom: 0px;
+    margin-top: auto;
     width: 100%;
 }
 

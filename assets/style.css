@@ -262,7 +262,7 @@ input:focus{
             "login"
             "foto";
         grid-template-columns: 1fr;
-        grid-template-rows: 18rem 18rem;
+        grid-template-rows: 90% 18rem;
         justify-content: center;
     }
 
@@ -363,6 +363,7 @@ input:focus{
     align-items: center;
     background-color: var(--whitetrans);
     color: var(--black);
+    height: 44rem;
 }
 .section-reg{
     width: 90%;

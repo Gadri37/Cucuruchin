@@ -212,6 +212,7 @@ input:focus{
     height: 300px;
     padding: 10px;
     gap: 10px;
+    background: var(--whitetrans);
 }
 .prod-item{
     display: flex;

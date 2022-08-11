@@ -382,11 +382,8 @@ input:focus{
 /* -------------------------------------------------- */
   /* open-footer */
 footer{
-    /* position: absolute;
-    margin-bottom: 0;
-    width: 100%; */
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -451,6 +448,8 @@ footer{
     .btn-contacto{
         width: 60%;
     }
-
+    .prod-item>h2 {
+        font-size: 2.3rem;
+    }
 
  }

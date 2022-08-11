@@ -282,7 +282,6 @@ input:focus{
     
 .section-log > div.log-item:nth-child(2){
     grid-area: login;
-    background-color: var(--whitetrans);
     color: var(--black);
     gap: 5px;
     display: flex;
@@ -321,7 +320,6 @@ input:focus{
 .contacto{
     width: 100%;
     height: auto;
-    background-color: var(--whitetrans);
     color: var(--black);
     padding: 3%;
 }

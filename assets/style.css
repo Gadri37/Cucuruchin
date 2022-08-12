@@ -421,7 +421,13 @@ footer{
 }
  /* footer-end */
 
-/* media */
+/* media para celular */
+@media (max-width: 767px) {
+section.hero .hero-item:first-child {
+    margin-left: 0;
+}
+/* media para tablet */
+}
 
  @media (min-width: 768px) {
 
@@ -466,7 +472,7 @@ footer{
     }
 
  }
-
+/* media para pc */
  @media (min-width: 1024px) {
     .section-log > div.log-item:first-child {
         background-position-y: -135px ;
